@@ -1,0 +1,14 @@
+.DashboardNavbar-div {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .DashboardNavbar-div {
+        /* background-color: aqua; */
+        display: block;
+        /* margin-top: 10px; */
+        /* padding-left: 20px; */
+    }
+}

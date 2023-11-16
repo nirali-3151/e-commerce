@@ -1,0 +1,141 @@
+:root {
+    --green-color : #167d7f
+}
+
+.cover-full-page {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+.view-catagories-main-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 100%;
+    max-height: 50%;
+    position: relative;
+    flex-wrap: wrap;
+    padding-left: 18px;
+    padding-right: 2px;
+    justify-content: center;
+    overflow-y: auto;
+    height: calc(100vh - 7.9rem);
+    overflow: 100%; 
+}
+
+.view-catagories-main-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.view-catagories-main-wrapper-inner {
+    flex: 23%;
+    height: 235px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    margin-right: 20px;
+    text-align: center;
+    box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.3);
+    /* background: #bce1fe; */
+    border-radius: 15px;
+    position: relative;
+}
+
+.view-catagory-img-view {
+    width: 150px;
+    height: 150px;
+    display: block;
+    padding: 20px 0px 0px 0px;
+    margin: 0 auto 8px;
+    cursor: pointer;
+}
+
+.view-catagory-loader {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    margin: 0 auto 8px;
+}
+
+.cover {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--orange-color);
+    /* vertical-align: middle;
+    border-style: none;
+    max-width: 100%; */
+}
+
+.cover:hover {
+    transform: scale(1.1);
+}
+
+.view-catagory-catagory-name {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.view-catagory-catagory-name:hover {
+    transform: scale(1.1);
+}
+
+.view-catagories-delete-icon {
+        z-index: 5;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        padding-bottom: -10px;
+        height: 27px;
+        border-radius: 9px;
+        /* width: 10%; */
+}
+
+.view-catagories-edit-icon {
+    z-index: 5;
+    position: absolute;
+    margin-top: 5px;
+    border-radius: 9px;
+    height: 27px;
+    right: 5px;
+    top: 30px;
+}
+
+.view-catagories-edit-icon:hover {
+    color: var(--green-color);
+}
+
+.view-catagories-delete-icon:hover {
+    color: var(--green-color);
+}
+
+.view-catagory-empty-array {
+    font-weight: 700;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .view-catagories-main-wrapper {
+        height: calc(100vh - 13rem);
+    }    
+}
